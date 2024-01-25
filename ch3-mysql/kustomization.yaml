@@ -1,0 +1,12 @@
+# ch3-mysql/kustomization.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- 01.wordpress-mysql-secret.yaml
+- 02.mysql-pv-claim.yaml
+- 03.wordpress-mysql.yaml
+- 04.wordpress-mysql-service.yaml
+- 05.wordpress-pvc.yaml
+- 06.wordpress-deployment.yaml
+- 07.wordpress-service.yaml

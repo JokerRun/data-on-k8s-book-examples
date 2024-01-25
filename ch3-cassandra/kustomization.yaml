@@ -1,0 +1,7 @@
+# kustomization.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- 01.cassandra-service.yaml
+- 02.cassandra-statefulset-orig.yaml
