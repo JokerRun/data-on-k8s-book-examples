@@ -8,8 +8,8 @@ spec:
     image: nginx
     volumeMounts:
     - mountPath: "/app/data"
-      name: my-volume
+      name: my-local-path-claim
   volumes:
-  - name: my-volume
+  - name: my-local-path-claim
     persistentVolumeClaim:
-      claimName: my-claim
+      claimName: my-local-path-claim

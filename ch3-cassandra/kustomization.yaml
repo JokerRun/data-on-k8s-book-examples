@@ -4,4 +4,5 @@ kind: Kustomization
 
 resources:
 - 01.cassandra-service.yaml
-- 02.cassandra-statefulset-orig.yaml
+- 02.cassandra-statefulset-orig(故意适用无法动态分配的sc让整个过程pending).yaml
+- 03.cassandra-statefulset(apply前可以kgpw观察pod创建过程).yaml
